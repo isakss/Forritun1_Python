@@ -33,8 +33,8 @@ elif fibo_abundant_str == "a":
 
     max_number = int(input("Input the max number to check: "))
 
-    print("Abundant Numbers:")
-    print("-------------------")
+    print("Abundant numbers:")
+    print("-----------------")
 
     for i in range(1,max_number+1):
         for j in range(1,i):
@@ -58,8 +58,8 @@ elif fibo_abundant_str == "b":
     
     max_number = int(input("Input the max number to check: "))
 
-    print("Abundant Numbers:")
-    print("-------------------")
+    print("Abundant numbers:")
+    print("-----------------")
 
     for i in range(1,max_number+1):
         for j in range(1,i):
