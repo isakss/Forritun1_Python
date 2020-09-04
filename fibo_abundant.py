@@ -1,5 +1,5 @@
 #Project 3: Fibo Abundant
-#This prgram takes in a number from a users input and prints out the numbers in the fibonacci sequence
+#This program takes in a number from a users input and prints out the numbers in the fibonacci sequence
 #between 0 and that number, and also prints out numbers that are abundant within that range depending on input from
 #user when prompted.
 
@@ -40,7 +40,7 @@ elif fibo_abundant_str == "a":
         for j in range(1,i):                            #In this iteration we run through range of 1 to the number being checked
             if i % j == 0:                              #at each iteration we run through the range of 1 to the current number being checked to see if it has any divisors
                 sum_of_divisors += j                    #If some number in the current iterative range is a divisor we add it to the sum of divisors variable
-        if sum_of_divisors > i:                         #If at some point the sum of divisors exceeds the current number in the iteration we print that sum
+        if sum_of_divisors > i:                         #If at some point the sum of divisors of the number being checked exceeds that number in the iteration we print that number as it is abundant
             print(i)
         sum_of_divisors = 0                             #At the end of the inner iteration we reset the sum variable for the next outer iteration
 elif fibo_abundant_str == "b":
