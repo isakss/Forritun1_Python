@@ -11,14 +11,15 @@ count_invalid = 0
 #We want to define three boolean constants that begin as false for use in our iterations and then change to true if the relevant conditions
 #are met
 
-has_upper_case = False
-has_lower_case = False
-has_number = False
-
 str_len_min = 6
 str_len_max = 20
 
 while password_string != "q":
+
+    has_upper_case = False
+    has_lower_case = False
+    has_number = False
+
     if len(password_string) < str_len_min or len(password_string) > str_len_max:
         print("Invalid length")
 
@@ -30,9 +31,11 @@ while password_string != "q":
         for char in password_string:
             if char.islower():
                 has_lower_case = True                              #Here we iterate over each character within the entered password string
-            elif char.isupper():                                   #and change the status of the boolean variables if a lower case letter, upper case letter
+            
+            if char.isupper():                                     #and change the status of the boolean variables if a lower case letter, upper case letter
                 has_upper_case = True                              #or a numeric value is found so we can apply the appropriate error messages
-            elif char.isnumeric():
+            
+            if char.isnumeric():
                 has_number = True
         
         if has_lower_case == False:
@@ -47,10 +50,6 @@ while password_string != "q":
         if has_lower_case == True and has_upper_case == True and has_number == True:
             print("Valid password of length",len(password_string))
             count_valid += 1
-
-            has_lower_case = False
-            has_number = False
-            has_upper_case = False
         else:
             count_invalid += 1
         
