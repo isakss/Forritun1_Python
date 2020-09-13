@@ -11,6 +11,8 @@ count_invalid = 0
 #We want to define three boolean constants that begin as false for use in our iterations and then change to true if the relevant conditions
 #are met
 
+#We also want to keep the minimum length of a string and the maximum length of a string as constants
+
 str_len_min = 6
 str_len_max = 20
 
