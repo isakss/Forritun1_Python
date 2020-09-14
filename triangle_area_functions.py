@@ -37,7 +37,7 @@ def calculate_area(x1,y1,x2,y2,x3,y3):
     c = side_length(x3,y3,x1,y1)
     s = (1/2) * (a + b + c)
 
-    return math.sqrt(s * (s - a) * (s - b) * (s - c)) 
+    return round(math.sqrt(s * (s - a) * (s - b) * (s - c)),2) 
 
 #And now we create the main part of our program, which gets the appropriate values of vertex and passes them into the calculation function
 
